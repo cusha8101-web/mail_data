@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
-mail_data = pd.read_csv(r"datasets\mail_data.csv")
+mail_data = pd.read_csv(r"mail_data.csv")
 
 # mail_data['Category'] = mail_data['Category'].map({'ham': 0, 'spam': 1})
 mail_data.loc[mail_data['Category'] == 'ham', 'Category'] = 0
